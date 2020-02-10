@@ -3,10 +3,10 @@ username = 'Vipzone'
 token = '68d8eccbf1e8079053d90911eb1701628b3c4ddc'
 
 response = requests.get(
-  'https://www.pythonanywhere.com/api/v0/user/{username}/cpu/'.format(
+  'https://www.pythonanywhere.com/api/v0/user/{vipzone}/cpu/'.format(
       username=username
   ),
-  headers={'Authorization': 'Token {token}'.format(token=token)}
+  headers={'Authorization': 'Token {68d8eccbf1e8079053d90911eb1701628b3c4ddc}'.format(token=token)}
 )
 if response.status_code == 200:
   print('CPU quota info:')
@@ -14,3 +14,5 @@ if response.status_code == 200:
 else:
   print('Got unexpected status code {}: {!r}'.format(response.status_code, response.content))
                         
+curl -H "X-Key:V7dxiCfTj1jvTd9MjSaRGDdX8FcdyrANfAZZqc8e7JAVOFK8" \ 
+https://api.newreleaes.io/v1/projects
